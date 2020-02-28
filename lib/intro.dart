@@ -1,6 +1,7 @@
 
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:fbla_app/interestForm.dart';
 import 'package:fbla_app/signIn.dart';
 import 'package:fbla_app/signUp.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,12 +12,12 @@ import 'package:worm_indicator/worm_indicator.dart';
 import 'bottomNav.dart';
 import 'images.dart';
 
-//
-//void main() {
-//  runApp(new MaterialApp(
-//    home: new introState(),
-//  ));
-//}
+
+void main() {
+  runApp(new MaterialApp(
+    home: new introState(),
+  ));
+}
 
 
 class introState extends StatefulWidget{
@@ -314,7 +315,31 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
 
 
 
-          Container(
+        Container(
+          padding: EdgeInsets.only(bottom: 10),
+
+          height: MediaQuery.of(context).size.width * .17,
+          child: new ButtonTheme(
+            minWidth: MediaQuery.of(context).size.width  * 0.8,
+            shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(20.0)),
+            height: 50,
+            child: new RaisedButton(
+                child: new Text("Interest Form", style: TextStyle(fontFamily: "Heiti",fontSize: 25.0,color: Colors.black,),),
+                color: Colors.deepOrange,
+
+                onPressed:(){
+
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => interestForm()),);
+
+                }
+            ),
+
+
+          ),
+        ),
+
+
+        Container(
 
             padding: EdgeInsets.only(bottom: 10),
 
@@ -325,7 +350,7 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
               height: 50,
               child: new RaisedButton(
                   child: new Text("Sign Up", style: TextStyle(fontFamily: "Heiti",fontSize: 25.0,color: Colors.black,),),
-                  color: Colors.deepOrange,
+                  color: Colors.white,
 
                   onPressed:(){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => signUp()),);
@@ -336,9 +361,8 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
             ),
           ),
 
-
         Container(
-          padding: EdgeInsets.only(top: 10),
+          padding: EdgeInsets.only(bottom: 10),
 
           height: MediaQuery.of(context).size.width * .17,
           child: new ButtonTheme(
@@ -368,6 +392,7 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
     );
 
   }
+
 
 
   @override
