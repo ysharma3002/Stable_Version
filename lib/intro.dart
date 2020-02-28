@@ -1,6 +1,8 @@
 
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:fbla_app/signIn.dart';
+import 'package:fbla_app/signUp.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:worm_indicator/shape.dart';
@@ -276,7 +278,7 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
 
-                  Text('Swipe to Continue',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),),
+                  Text('Swipe to Continue',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15),),
 
                   Icon(Icons.navigate_next,color: Colors.white,)
                 ],
@@ -326,7 +328,7 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
                   color: Colors.deepOrange,
 
                   onPressed:(){
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => signUp()),);
                   }
               ),
 
@@ -349,7 +351,7 @@ class intro extends State<introState> with SingleTickerProviderStateMixin {
 
                 onPressed:(){
 
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => bottomNavState()),);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => signIn()),);
 
                 }
             ),

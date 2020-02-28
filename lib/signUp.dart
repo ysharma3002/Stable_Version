@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fbla_app/bottomNav.dart';
 import 'package:flutter/material.dart';
 
 import 'intro.dart';
@@ -126,7 +127,10 @@ class signUp extends StatelessWidget{
 
             height: 55.0,
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => bottomNavState()),);
+
+              },
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
               padding: EdgeInsets.all(0.0),
               child: Ink(

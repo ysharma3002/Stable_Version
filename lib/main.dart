@@ -6,14 +6,14 @@ import 'intro.dart';
 
 
 
-//void main() {
-//  runApp(new MaterialApp(
-//    home: new splashTimer(),
-//    routes: <String, WidgetBuilder>{
-//      '/introState': (BuildContext context) => new introState(),
-//    },
-//  ));
-//}
+void main() {
+  runApp(new MaterialApp(
+    home: new splashTimer(),
+    routes: <String, WidgetBuilder>{
+      '/introState': (BuildContext context) => new introState(),
+    },
+  ));
+}
 
 class splashTimer extends StatefulWidget {
   @override

@@ -14,11 +14,11 @@ import 'dashboard.dart';
 import 'meeting.dart';
 
 
-void main() {
-  runApp(new MaterialApp(
-    home: new bottomNavState(),
-  ));
-}
+//void main() {
+//  runApp(new MaterialApp(
+//    home: new bottomNavState(),
+//  ));
+//}
 
 class bottomNavState extends StatefulWidget{
 
