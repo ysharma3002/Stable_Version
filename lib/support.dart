@@ -1,9 +1,12 @@
 
 
+import 'dart:convert';
+import 'package:term_glyph/term_glyph.dart' as glyph;
 import 'package:fbla_app/reportABug.dart';
 import 'package:fbla_app/test.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'bottomNav.dart';
@@ -738,7 +741,6 @@ Widget socialMedia(){
   String twitterUrl = 'https://twitter.com/mustang_develop';
   String facebookUrl = 'https://www.facebook.com/mustangDevelopers';
 
-
   return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
@@ -838,7 +840,13 @@ Widget socialMedia(){
 
 }
 
+
+
 Widget licensing() {
+
+  String copyrightUrl = 'https://docs.google.com/document/d/1nYUkUamOFyL2BUN-bG_YvryyknjZ32zjuODKtIa-nI0/edit?usp=sharing';
+
+
   return ListView(
       children: <Widget>[
 
@@ -867,12 +875,36 @@ Widget licensing() {
         SafeArea(
           child: Container(
             alignment: Alignment.center,
-            padding: EdgeInsets.only(top: 45, bottom: 20),
+            padding: EdgeInsets.only(top: 45),
             child: Text('Copyright', style: TextStyle(fontSize: 25,
                 color: Colors.deepOrange,
                 fontWeight: FontWeight.bold),),),
-
         ),
+
+        SafeArea(
+            child: Container(
+              alignment: Alignment.center,
+              padding: EdgeInsets.only(top: 10, left: 1),
+              child: Text('*click the image below to view our Copyright Information*',style: TextStyle(fontSize: 12, color: Colors.grey, fontWeight: FontWeight.bold),),
+            )
+        ),
+
+        Container(
+            padding: EdgeInsets.only(top: 50,left: 50,right: 50, bottom: 20),
+
+            child: GestureDetector(
+              child: ClipRRect(
+                borderRadius: new BorderRadius.circular(40.0),
+                child: Image.asset('image/copyright.png',scale: 2,),
+              ),
+              onTap: (){
+                launchURL(copyrightUrl);
+              },
+            )
+        ),
+
+
+
       ]
   );
 }
