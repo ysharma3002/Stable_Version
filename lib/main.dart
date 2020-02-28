@@ -14,7 +14,7 @@ void main() {
     },
   ));
 }
-
+//hi
 class splashTimer extends StatefulWidget {
   @override
   splashScreen createState() => new splashScreen();
