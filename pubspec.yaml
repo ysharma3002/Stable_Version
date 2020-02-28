@@ -61,7 +61,6 @@ flutter:
    - image/allan.png
    - image/manal.png
    - image/thomas.png
-   - image/sanika.png
    - image/peter.png
    - image/maham.png
    - image/joyce.png
@@ -88,6 +87,15 @@ flutter:
    - image/Facebook.png
    - image/FBLAPBL.png
    - image/bugreport.png
+   - image/newsanika.JPG
+   - image/thomas.JPG
+   - image/joyce.JPG
+   - image/maham.JPG
+   - image/peter.JPG
+   - image/Rui.jpg
+   - image/Manal.jpg
+   - image/Allan.jpg
+   - image/sanika.JPG
    - image/slideshow1.png
    - image/slideshow1.jpg
    - image/slideshow2.JPG
@@ -96,6 +104,7 @@ flutter:
    - image/dashBAA.png
    - image/projects.png
    - image/messageBackground.png
+
 
     #  - images/a_dot_ham.jpeg
 

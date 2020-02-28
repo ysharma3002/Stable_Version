@@ -1,9 +1,12 @@
 
 
+import 'package:fbla_app/reportABug.dart';
 import 'package:fbla_app/test.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'bottomNav.dart';
 
 
 class supportState extends StatefulWidget{
@@ -27,6 +30,8 @@ class support extends State<supportState>{
 
   var fontWeight4 = FontWeight.normal;
 
+  var fontWeight5 = FontWeight.normal;
+
 
   @override
   Widget build(BuildContext context) {
@@ -48,8 +53,9 @@ class support extends State<supportState>{
         children: <Widget>[
           qAndA(),
           contactUs(),
+          reportABugState(),
           socialMedia(),
-          socialMedia(),
+          licensing(),
 
         ],
         onPageChanged: (int page){
@@ -61,6 +67,8 @@ class support extends State<supportState>{
               fontWeight2 = FontWeight.normal;
               fontWeight3 = FontWeight.normal;
               fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.normal;
+
             });
           }
 
@@ -70,6 +78,8 @@ class support extends State<supportState>{
               fontWeight2 = FontWeight.bold;
               fontWeight3 = FontWeight.normal;
               fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.normal;
+
             });
           }
 
@@ -79,6 +89,8 @@ class support extends State<supportState>{
               fontWeight2 = FontWeight.normal;
               fontWeight3 = FontWeight.bold;
               fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.normal;
+
             });
           }
 
@@ -88,9 +100,20 @@ class support extends State<supportState>{
               fontWeight2 = FontWeight.normal;
               fontWeight3 = FontWeight.normal;
               fontWeight4 = FontWeight.bold;
+              fontWeight5 = FontWeight.normal;
+
             });
           }
 
+          if(page==4) {
+            setState(() {
+              fontWeight1 = FontWeight.normal;
+              fontWeight2 = FontWeight.normal;
+              fontWeight3 = FontWeight.normal;
+              fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.bold;
+      });
+    }
 
         }
 
@@ -122,10 +145,12 @@ class support extends State<supportState>{
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
                 children: <Widget>[
-                  Text('Q&A',style: TextStyle(fontSize: 17,fontWeight: fontWeight1),),
-                  Text('Contact Us',style: TextStyle(fontSize: 17,fontWeight: fontWeight2)),
-                  Text('Report a Bug',style: TextStyle(fontSize: 17,fontWeight: fontWeight3)),
-                  Text('Social Media',style: TextStyle(fontSize: 17,fontWeight: fontWeight4)),
+                  Text('Q&A',style: TextStyle(fontSize: 14,fontWeight: fontWeight1),),
+                  Text('Contact Us',style: TextStyle(fontSize: 14,fontWeight: fontWeight2)),
+                  Text('Report a Bug',style: TextStyle(fontSize: 14,fontWeight: fontWeight3)),
+                  Text('Social Media',style: TextStyle(fontSize: 14,fontWeight: fontWeight4)),
+                  Text('Licensing',style: TextStyle(fontSize: 14,fontWeight: fontWeight5)),
+
 
                 ],
 
@@ -384,7 +409,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/image.png',scale: 4.5,),
+            child: Image.asset('image/Rui.jpg',scale: 19,),
             padding: EdgeInsets.only(left: 5, bottom: 20),
           ),
 
@@ -409,7 +434,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/allan.png',scale: 4.5,),
+            child: Image.asset('image/Allan.jpg',scale: 19,),
             padding: EdgeInsets.only(left: 0, right: 0, bottom: 20),
           ),
 
@@ -435,7 +460,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/manal.png',scale: 4.5,),
+            child: Image.asset('image/Manal.jpg',scale: 19,),
             padding: EdgeInsets.only(left: 33, right:35,bottom: 20),
           ),
 
@@ -464,7 +489,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/thomas.png',scale: 3.5,),
+            child: Image.asset('image/thomas.JPG',scale: 38,),
             padding: EdgeInsets.only(left: 12, right: 20, bottom: 20),
           ),
 
@@ -489,7 +514,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/sanika.png',scale: 2,),
+            child: Image.asset('image/sanika.JPG',scale: 39,),
             padding: EdgeInsets.only(left: 10, right: 20, bottom: 20),
           ),
 
@@ -514,7 +539,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/peter.png',scale: 3.3,),
+            child: Image.asset('image/peter.JPG',scale: 36,),
             padding: EdgeInsets.only(left: 10, right: 20, bottom: 20),
           ),
           Column(
@@ -538,7 +563,7 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/maham.png',scale: 1.9,),
+            child: Image.asset('image/maham.JPG',scale: 37,),
             padding: EdgeInsets.only(left: 27, right: 20, bottom: 20),
           ),
           Column(
@@ -562,8 +587,8 @@ Widget contactUs() {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            child: Image.asset('image/joyce.png',scale: 7.2,),
-            padding: EdgeInsets.only(left: 37, right: 10, bottom: 25),
+            child: Image.asset('image/joyce.JPG',scale: 36,),
+            padding: EdgeInsets.only(left: 37, right: 4, bottom: 25),
           ),
           Column(
               children: <Widget>[
@@ -705,9 +730,6 @@ Widget contactUs() {
 
 }
 
-
-
-
 Widget socialMedia(){
 
   //add urls
@@ -794,7 +816,6 @@ Widget socialMedia(){
               )
           ),
 
-
           //name of link
           Center(
             child: Text('Facebook',style: TextStyle(fontSize: 20, color: Colors.black,fontWeight: FontWeight.bold),),
@@ -808,10 +829,52 @@ Widget socialMedia(){
 
         ],
 
+
       )
 
   );
 
+
+
+}
+
+Widget licensing() {
+  return ListView(
+      children: <Widget>[
+
+        SafeArea(
+          child: Container(
+            alignment: Alignment.centerLeft,
+            padding: EdgeInsets.only(top: 5, left: 45, bottom: 20),
+            child: Text('Terms of Use and Licensing', style: TextStyle(fontSize: 25,
+                color: Colors.deepOrange,
+                fontWeight: FontWeight.bold),),),
+
+        ),
+
+
+        SafeArea(
+            child: Container(
+              alignment: Alignment.centerLeft,
+              padding: EdgeInsets.only(top: 20, left: 20),
+              child: Text('If you access Mustang Developers Stable application, then we grant you a revocable, non-exclusive, non-transferable, limited right to install and use Stable on wireless electronic devices owned or controlled by you and to access and use Stable on such devices strictly in accordance with the following conditions. You shall not: (1) decompile, reverse engineer, disassemble, attempt to derive the source code of, or decrypt the application; (2) make any modification, adaptation, improvement, enhancement, translation, or derivative work from the application; (3) violate any applicable laws, rules, or regulations in connection with your access or use of the application; (4) remove, alter, or obscure any proprietary notice (including any notice of copyright or trademark) posted by us or the licensors of the application; (5) use the application for any revenue-generating endeavor, commercial enterprise, or other purpose for which it is not designed or intended; or (6) use the application to send automated queries to any website or to send any unsolicited commercial e-mail.',
+                style: TextStyle(fontSize: 15,
+                    color: Colors.black,
+                ),),
+
+            )
+        ),
+        SafeArea(
+          child: Container(
+            alignment: Alignment.center,
+            padding: EdgeInsets.only(top: 45, bottom: 20),
+            child: Text('Copyright', style: TextStyle(fontSize: 25,
+                color: Colors.deepOrange,
+                fontWeight: FontWeight.bold),),),
+
+        ),
+      ]
+  );
 }
 
 

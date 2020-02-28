@@ -200,10 +200,10 @@ class eventOrService extends State<eventOrServiceState>{
 
 
                     Container(
-                      padding: EdgeInsets.only(left: 30, right: 30),
+                      padding: EdgeInsets.only(left: 10, right: 0),
                       child: DropdownButton<String>(
                         hint: Text('Choose an event'),
-                        items: <String>['A', 'B', 'C', 'D'].map((String value) {
+                        items: <String>['3-D Animation', 'Accounting I', 'Accounting II', 'Advertising', 'Agribusiness', 'Banking & Financial Systems', 'Broadcast Journalism', 'Business Calculations', 'Business Communication', 'Business Ethics', 'Business Financial Plan', 'Business Law', 'Business Plan', 'Client Service', 'Coding & Programming', 'Computer Applications', 'Computer Game & Simulation Programming', 'Computer Problem Solving', 'Cyber Security', 'Database Design & Applications', 'Digital Video Production', 'E-business', 'Economics', 'Electronic Career Portfolio', 'Emerging Business Issues', 'Entrepreneurship', 'Future Business Leader', 'Global Business', 'Graphic Design', 'Health Care Administration', 'Help Desk', 'Hospitality Management (FBLA)', 'Impromptu Speaking (FBLA)', 'Insurance & Risk Management', 'Introduction to Business', 'Introduction to Business Communication', 'Introduction to Business Presentation', 'Introduction to Business Procedures', 'Introduction to FBLA', 'Introduction to Financial Math', 'Introduction to Information Technology', 'Introduction to Parliamentary Procedure', 'Introduction to Public Speaking', 'Job Interview (FBLA)', 'Journalism', 'LifeSmarts', 'Management Decision Making', 'Management Information Systems', 'Marketing', 'Mobile Application Development (FBLA)', 'Network Design (FBLA)', 'Networking Concepts (FBLA)', 'Organizational Leadership', 'Parliamentary Procedure (FBLA)', 'Personal Finance (FBLA)', 'Political Science', 'Public Service Announcement', 'Public Speaking (FBLA)', 'Publication Design', 'Sales Presentation (FBLA)', 'Securities & Investments', 'Social Media Campaign', 'Sports & Entertainment Management', 'Spreadsheet Applications', 'Virtual Business Finance Challenge', 'Virtual Business Management Challenge', 'Website Design (FBLA)', 'Word Processing'].map((String value) {
                           return new DropdownMenuItem<String>(
                             value: value,
                             child: new Text(value),
@@ -211,8 +211,28 @@ class eventOrService extends State<eventOrServiceState>{
                         }).toList(),
                         onChanged: (_) {},
                       ),
-                    )
+                    ),
 
+                    new ButtonTheme(
+
+                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+
+
+                        height: 50,
+                        minWidth: 300,
+                        child: Container(
+                          padding: EdgeInsets.only(left: 10,right: 10, top: 25),
+                          child: RaisedButton(
+                              child: Text('Submit',style: TextStyle(fontSize: 17, color: Colors.white),),
+                              color: Colors.deepOrange,
+
+                              onPressed: (){
+                                Navigator.of(context).pop();
+                              }
+                          ),
+                        )
+
+                    ),
 
 
 
@@ -311,7 +331,7 @@ class eventOrService extends State<eventOrServiceState>{
 
 
                     Container(
-                      child: Text('Community Service Form:',style: TextStyle(fontSize: 17),),
+                      child: Text('Community Service Event:',style: TextStyle(fontSize: 17),),
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.only(left: 20, top: 30, bottom: 15),
                     ),
@@ -321,16 +341,37 @@ class eventOrService extends State<eventOrServiceState>{
                       padding: EdgeInsets.only(left: 30, right: 30),
                       child: DropdownButton<String>(
                         hint: Text('Choose an event'),
-                        items: <String>['A', 'B', 'C', 'D'].map((String value) {
+                        items: <String>['Street Cleanup', 'March of Dimes', 'Chick-fil-A Fundraising', 'Toys for Tots'].map((String value) {
                           return new DropdownMenuItem<String>(
                             value: value,
                             child: new Text(value),
                           );
                         }).toList(),
-                        onChanged: (_) {},
+                        onChanged: (_) {
+                        },
                       ),
-                    )
+                    ),
 
+                    new ButtonTheme(
+
+                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+
+
+                        height: 50,
+                        minWidth: 300,
+                        child: Container(
+                          padding: EdgeInsets.only(left: 10,right: 10, top: 25),
+                          child: RaisedButton(
+                              child: Text('Submit',style: TextStyle(fontSize: 17, color: Colors.white),),
+                              color: Colors.deepOrange,
+
+                              onPressed: (){
+                                Navigator.of(context).pop();
+                              }
+                          ),
+                        )
+
+                    ),
 
 
 
