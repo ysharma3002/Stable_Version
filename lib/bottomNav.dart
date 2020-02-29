@@ -49,8 +49,8 @@ class bottomNav extends State<bottomNavState>{
   List<Color> currentColor = [
 
     Colors.white,
-    Colors.green,
-    Colors.red
+    Colors.white,
+    Colors.white
 
   ];
 
