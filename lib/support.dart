@@ -633,8 +633,8 @@ Widget contactUs() {
               child: Image.asset('image/BAA.png',scale: 9,),
             ),
             onTap: (){
-              //TODO: Go to web page
-            },
+                launchURL('https://web.fbla-pbl.org/baa3/default.asp?p=about');
+                },
           )
       ),
 
@@ -655,7 +655,7 @@ Widget contactUs() {
               child: Image.asset('image/CSA.png',scale: 9,),
             ),
             onTap: (){
-              //TODO: Go to web page
+              launchURL('https://www.fbla-pbl.org/fbla/programs/recognition-awards/csa/');
             },
           )
       ),
@@ -674,7 +674,7 @@ Widget contactUs() {
               child: Image.asset('image/Inland.png',scale: 9,),
             ),
             onTap: (){
-              //TODO: Go to web page
+              launchURL('https://www.cafbla.org/domain/73');
             },
           )
       ),
@@ -693,7 +693,7 @@ Widget contactUs() {
               child: Image.asset('image/CAFBLA.png',scale: 9,),
             ),
             onTap: (){
-              //TODO: Go to web page
+              launchURL('https://www.cafbla.org/home');
             },
           )
       ),
@@ -712,7 +712,7 @@ Widget contactUs() {
               child: Image.asset('image/FBLAPBL.png',scale: 9,),
             ),
             onTap: (){
-              //TODO: Go to web page
+              launchURL('https://www.fbla-pbl.org/');
             },
           )
       ),
