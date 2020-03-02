@@ -4,11 +4,9 @@ import 'dart:core';
 
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:fbla_app/support.dart';
-import 'package:fbla_app/test.dart';
+import 'package:fbla_app/adviserSupport.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:table_calendar/table_calendar.dart';
 
 
 import 'adviserDashboard.dart';
@@ -62,7 +60,7 @@ class adviserBottomNav extends State<adviserBottomNavState>{
     screens=[
       adviserDashboard(),
       adviserMeeting(),
-      supportState(),
+      adviserSupportState(),
     ];
 
     return Scaffold(

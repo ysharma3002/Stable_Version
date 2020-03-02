@@ -6,8 +6,8 @@ import 'eventOrService.dart';
 import 'package:fbla_app/tasksClicked.dart';
 
 
-List<String> pendingTasksImage = ['image/meetingagenda.png', 'image/dashBAA.png', 'image/projects.png', 'image/projects.png', 'image/projects.png'];
-List<String> pendingTasksName = ['Set Meeting Agenda', 'Approve BAA', 'Register for SLC', 'Register for SLC', 'Register for SLC'];
+List<String> pendingTasksImage = ['image/meetingagenda.png', 'image/codegenerator.png', 'image/interestforms.png', 'image/competitiveevent.png', 'image/communityserviceform.png'];
+List<String> pendingTasksName = ['Set Meeting Agenda', 'Meeting Code Generator', 'Submitted Interest Forms', 'Competitive Event Data', 'Community Service Data'];
 
 
 class adviserMeeting extends StatelessWidget{
@@ -82,7 +82,7 @@ class adviserMeeting extends StatelessWidget{
               Container(
 
                 padding: EdgeInsets.only(left: 20),
-                child: Text('Tami Moore', style: TextStyle(fontSize: 30, color: Colors.deepOrange,),),
+                child: Text('Tami Moore', style: TextStyle(fontSize: 30, color: Colors.deepOrange, fontWeight: FontWeight.bold),),
 
               ),
 
