@@ -2,7 +2,7 @@
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/yash/Downloads/flutter"
 export "FLUTTER_APPLICATION_PATH=/Users/yash/Downloads/johnny-master2-master"
-export "FLUTTER_TARGET=/Users/yash/Downloads/johnny-master2-master/lib/intro.dart"
+export "FLUTTER_TARGET=/Users/yash/Downloads/johnny-master2-master/lib/adviserBottomNav.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
 export "FLUTTER_FRAMEWORK_DIR=/Users/yash/Downloads/flutter/bin/cache/artifacts/engine/ios"

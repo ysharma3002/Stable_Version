@@ -13,11 +13,11 @@ import 'bottomNav.dart';
 import 'images.dart';
 
 
-void main() {
-  runApp(new MaterialApp(
-    home: new introState(),
-  ));
-}
+//void main() {
+//  runApp(new MaterialApp(
+//    home: new introState(),
+//  ));
+//}
 
 
 class introState extends StatefulWidget{

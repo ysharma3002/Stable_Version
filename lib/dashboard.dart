@@ -1,6 +1,7 @@
 
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:fbla_app/intro.dart';
 import 'package:fbla_app/tasksClicked.dart';
 import 'package:fbla_app/test.dart';
 import 'package:fbla_app/testTwo.dart';
@@ -40,6 +41,11 @@ List<String> slideshowImage = ['image/slideshow1.png',
 
 //TODO: change images to BAA, CSA, and Projects in that order
 
+//void main() {
+//  runApp(new MaterialApp(
+//    home: new introState(),
+//  ));
+//}
 
 
 Widget dashboard(){
