@@ -10,6 +10,12 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'bottomNav.dart';
 
+void main() {
+  runApp(new MaterialApp(
+    home: new FormsState(),
+  ));
+}
+
 
 class FormsState extends StatefulWidget{
 
@@ -33,6 +39,7 @@ class Forms extends State<FormsState>{
 
   @override
   Widget build(BuildContext context) {
+
     int currentPage;
 
 
@@ -40,6 +47,75 @@ class Forms extends State<FormsState>{
       initialPage: 0,
     );
 
+    var pageView = PageView(
+        controller: controller,
+        children: <Widget>[
+          Form(),
+
+        ],
+        onPageChanged: (int page){
+          currentPage = page;
+
+          if(page==0) {
+            setState(() {
+              fontWeight1 = FontWeight.bold;
+              fontWeight2 = FontWeight.normal;
+              fontWeight3 = FontWeight.normal;
+              fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.normal;
+
+            });
+          }
+
+          if(page==1) {
+            setState(() {
+              fontWeight1 = FontWeight.normal;
+              fontWeight2 = FontWeight.bold;
+              fontWeight3 = FontWeight.normal;
+              fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.normal;
+
+
+            });
+          }
+
+          if(page==2) {
+            setState(() {
+              fontWeight1 = FontWeight.normal;
+              fontWeight2 = FontWeight.normal;
+              fontWeight3 = FontWeight.bold;
+              fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.normal;
+
+
+            });
+          }
+
+          if(page==3) {
+            setState(() {
+              fontWeight1 = FontWeight.normal;
+              fontWeight2 = FontWeight.normal;
+              fontWeight3 = FontWeight.normal;
+              fontWeight4 = FontWeight.bold;
+              fontWeight5 = FontWeight.normal;
+
+
+            });
+          }
+
+          if(page==4) {
+            setState(() {
+              fontWeight1 = FontWeight.normal;
+              fontWeight2 = FontWeight.normal;
+              fontWeight3 = FontWeight.normal;
+              fontWeight4 = FontWeight.normal;
+              fontWeight5 = FontWeight.bold;
+
+            });
+          }
+        }
+
+    );
 
     Widget Forms() {
       return ListView(
